@@ -3,6 +3,12 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ArrayList1 {
+    public void setA(int a) {
+        this.a = a;
+    }
+
+    private int a;
+
     public static void main(String[] args) {
         List<Integer> l = Arrays.asList(1,2,3,4,5,6,6,7);
          System.out.println("List = "+l);

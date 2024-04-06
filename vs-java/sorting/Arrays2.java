@@ -20,11 +20,11 @@ public class Arrays2 {
     // user defined non primitive data sorting
     public static void main(String[] args) {
         // create arrays of Student
-        Student[] stu = {
-            new Student(10, "Varun"),
-            new Student(12, "Vikas"),
-            new Student(20, "Aman"),
-            new Student(9, "Abhishek")
+        Student1[] stu = {
+            new Student1(10, "Varun"),
+            new Student1(12, "Vikas"),
+            new Student1(20, "Aman"),
+            new Student1(9, "Abhishek")
         };
         System.out.println(Arrays.toString(stu));
 
@@ -37,9 +37,9 @@ public class Arrays2 {
         */
 
         // using anonymous class expressions
-        Comparator<Student> com = new Comparator<>(){
+        Comparator<Student1> com = new Comparator<>(){
             @Override 
-            public int compare(Student a, Student b){
+            public int compare(Student1 a, Student1 b){
                 if(a.age>b.age){
                     return 1;
                 }

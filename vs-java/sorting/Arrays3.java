@@ -4,10 +4,10 @@ package sorting;
 import java.util.Arrays;
 
 // Comparable interface needs to implement for comparing userdefined data
-class Student implements Comparable<Student>{
+class Student1 implements Comparable<Student1>{
     int age;
     String name;
-    Student(int age, String name){
+    Student1(int age, String name){
         this.age = age;
         this.name = name;
     }
@@ -17,7 +17,7 @@ class Student implements Comparable<Student>{
     }
 
     @Override
-    public int compareTo(Student s){
+    public int compareTo(Student1 s){
         if(this.age>s.age){
             return 1;
         }else if(this.age<s.age){
@@ -29,12 +29,12 @@ class Student implements Comparable<Student>{
 }
 public class Arrays3 {
     public static void main(String[] args) {
-        Student[] stu1 = {
-            new Student(10, "Varun"),
-            new Student(12, "Vikas"),
-            new Student(20, "Abhishek"),
-            new Student(9, "Neeraj"),
-            new Student(9, "Bharat")
+        Student1[] stu1 = {
+            new Student1(10, "Varun"),
+            new Student1(12, "Vikas"),
+            new Student1(20, "Abhishek"),
+            new Student1(9, "Neeraj"),
+            new Student1(9, "Bharat")
         };
         System.out.println(Arrays.toString(stu1));
         Arrays.sort(stu1); // comparable interface is inbuilt for sorting  
